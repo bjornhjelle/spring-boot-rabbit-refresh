@@ -1,0 +1,14 @@
+
+management.security.enabled: false
+
+spring.rabbitmq:
+  host: ec2-34-250-54-9.eu-west-1.compute.amazonaws.com
+  port: 5672
+  username: ruter
+  password: r0mjul16
+  virtual-host: ruter-mqtt
+
+amqp:
+  queue: test-gps-queue
+  topicExchange: amq.topic
+  routingKey: "ruter.vendor.*.*.dilaxapc.json"
